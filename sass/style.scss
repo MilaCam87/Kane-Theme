@@ -1,0 +1,110 @@
+nav {
+	background-color: #26AD60;
+}
+
+.bg-imagen {
+	background-image: url(.../img/carousel-bg.jpg);
+	background-size: cover;
+}
+
+@mixin caja($color){
+	width: 150px;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+	
+}
+.uno{ @include caja($uno);}
+.dos{ @include caja($dos);}
+.tres{ @include caja($tres);}
+.cuatro{ @include caja($cuatro);}
+.cinco { @include caja($cinco);}
+
+@mixin caja-color($color){
+	background-color: $color;
+}
+
+.caja{
+	@include caja-color($uno);
+	&.uno {@include caja-color($uno);}
+	&.dos {@include caja-color($dos);}
+	&.tres {@include caja-color($tres);}
+	&.cuatro {@include caja-color($cuatro);}
+	&.cinco {@include caja-color ($cinco);}
+}
+
+.a{ @include caja($a);}
+.b{ @include caja($b);}
+.c{ @include caja($c);}
+.d{ @include caja($d);}
+.e { @include caja($e);}
+
+@mixin caja-color($color){
+	background-color: $color;
+}
+
+.caja{
+	@include caja-color($uno);
+	&.a {@include caja-color($a);}
+	&.b {@include caja-color($b);}
+	&.c {@include caja-color($c);}
+	&.d {@include caja-color($d);}
+	&.e {@include caja-color ($e);}
+}
+
+.f{ @include caja($f);}
+.g{ @include caja($g);}
+.h{ @include caja($h);}
+.i{ @include caja($i);}
+.j { @include caja($j);}
+
+@mixin caja-color($color){
+	background-color: $color;
+}
+
+.caja{
+	@include caja-color($uno);
+	&.f {@include caja-color($f);}
+	&.g {@include caja-color($g);}
+	&.h {@include caja-color($h);}
+	&.i {@include caja-color($i);}
+	&.j {@include caja-color ($j);}
+}
+
+.k{ @include caja($k);}
+.l{ @include caja($l);}
+.m{ @include caja($m);}
+.n{ @include caja($n);}
+.o { @include caja($o);}
+
+@mixin caja-color($color){
+	background-color: $color;
+}
+
+.caja{
+	@include caja-color($uno);
+	&.k {@include caja-color($k);}
+	&.l {@include caja-color($l);}
+	&.m {@include caja-color($m);}
+	&.n {@include caja-color($n);}
+	&.o {@include caja-color ($o);}
+}
+
+.p{ @include caja($p);}
+.q{ @include caja($q);}
+.r{ @include caja($r);}
+.s{ @include caja($s);}
+.t { @include caja($t);}
+
+@mixin caja-color($color){
+	background-color: $color;
+}
+
+.caja{
+	@include caja-color($uno);
+	&.p {@include caja-color($p);}
+	&.q {@include caja-color($q);}
+	&.r {@include caja-color($r);}
+	&.s {@include caja-color($s);}
+	&.t {@include caja-color ($t);}
+}
